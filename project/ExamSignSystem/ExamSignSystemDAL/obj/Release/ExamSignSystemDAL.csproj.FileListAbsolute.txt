@@ -1,0 +1,7 @@
+E:\毕业设计\ExamSignSystem\ExamSignSystemDAL\bin\Release\ExamSignSystemDAL.dll
+E:\毕业设计\ExamSignSystem\ExamSignSystemDAL\bin\Release\ExamSignSystemDAL.pdb
+E:\毕业设计\ExamSignSystem\ExamSignSystemDAL\bin\Release\ExamSignSystemEntity.dll
+E:\毕业设计\ExamSignSystem\ExamSignSystemDAL\bin\Release\ExamSignSystemEntity.pdb
+E:\毕业设计\ExamSignSystem\ExamSignSystemDAL\obj\Release\ExamSignSystemDAL.csprojResolveAssemblyReference.cache
+E:\毕业设计\ExamSignSystem\ExamSignSystemDAL\obj\Release\ExamSignSystemDAL.dll
+E:\毕业设计\ExamSignSystem\ExamSignSystemDAL\obj\Release\ExamSignSystemDAL.pdb

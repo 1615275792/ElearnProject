@@ -1,0 +1,150 @@
+﻿body {
+}
+
+  div.neiceng{
+                width:100%;
+                height:100%;
+                background:rgba(0, 0, 0, 0.5);
+                position: fixed;
+                left: 0;
+                top: 0;
+                z-index: 99;
+                display: none;
+
+            }
+             div.bigBody{
+                width: 500px;
+                border-radius: 8px;
+                height:300px;
+                border: 1px solid #ccc;
+                position: absolute;
+                left:520px;
+                top:150px;
+                z-index:1000;
+                display:none;
+            }
+            div.pwdHeader{
+               width: 500px;
+               height:60px;
+               border-radius: 8px 8px 0px 0px;
+            }
+            div.pwdHeader_left{
+                width: 120px;
+                height: 60px;
+                margin-left: 10px;
+                float: left;
+                color: black;
+                font-size: 24px;
+                font-family: '黑体';
+                text-align: center;
+                line-height: 60px;
+            }
+            div.pwdHeader_right{
+                width: 16px;
+                height: 16px;
+                margin-left: 340px;
+                margin-top: 20px;
+                float: left;
+                border: 2px solid #ccc;
+                cursor: pointer;
+                border-radius:5px;
+                
+            }
+            .pwdHeader_right:hover{
+                border-color: red;
+                color: red;
+            }
+             div.bottom{
+                background-color: #EBEEF2;
+                width: 500px;
+                height:400px;
+                border-radius: 0px 0px 8px 8px;
+            }
+             .pwdBottom{
+                background-color: #EBEEF2;
+                width: 500px;
+                height:220px;
+                border-radius: 0px 0px 8px 8px;
+                padding-top:20px;
+             }
+          .pwdBottom input{
+                width:220px; 
+                height:30px; 
+                border: 2px solid #aaa; 
+                border-radius:5px;
+                font-size: 16px;
+                margin-top:10px;
+            }
+            .pwdBottom label{
+                padding-left:10px;
+                color: #333333;
+                font-size:20px;
+                font-family:'黑体';
+                font-weight: bolder;
+            }
+            div.findPwd{
+                margin-left:70px;
+            } 
+            .pwdEnd{
+                margin-top:20px;
+            }
+           input.sure{
+                width: 100px;
+                height:40px;
+                margin-top:5px;
+                margin-left:50px;
+                border-radius: 6px;
+                background-color:#428BCA;
+                font-family: '黑体';
+                font-size:20px;
+                color: white;
+                border:2px solid #428BCA;
+                cursor:pointer;
+                padding-left: 25px;
+                float: left;
+            }
+            input.back{
+                width: 140px;
+                height:40px;
+                margin-top:5px;
+                margin-left:32px;
+                border-radius: 6px;
+                background-color:white;
+                font-family: '黑体';
+                font-size:20px;
+                color:black;
+                border:2px solid #ccc;
+                cursor:pointer;
+                padding-left:30px;
+                float: left;
+            }
+            .pwdSure img{
+                position: absolute;
+                top:222px;
+                left:136px;
+                z-index: 1000;
+                cursor:pointer;
+            }
+            .pwdBack img{
+                position: absolute;
+                top:218px;
+                left:270px;
+                z-index: 1000;
+                cursor:pointer;
+            }
+            .title{
+                 width:500px;
+                 height:30px;
+                 text-align: center;
+                 font-family:'黑体';
+                 font-size:18px;
+                 color: red; 
+                 margin-top:-10px; 
+            }
+            .findPwd span{
+                color:red;
+                font-family: '黑体';
+            }
+            .con{
+                margin-left: 30px;
+            }

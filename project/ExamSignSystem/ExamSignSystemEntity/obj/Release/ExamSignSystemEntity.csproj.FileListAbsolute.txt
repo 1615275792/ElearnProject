@@ -1,0 +1,4 @@
+E:\毕业设计\ExamSignSystem\ExamSignSystemEntity\bin\Release\ExamSignSystemEntity.dll
+E:\毕业设计\ExamSignSystem\ExamSignSystemEntity\bin\Release\ExamSignSystemEntity.pdb
+E:\毕业设计\ExamSignSystem\ExamSignSystemEntity\obj\Release\ExamSignSystemEntity.dll
+E:\毕业设计\ExamSignSystem\ExamSignSystemEntity\obj\Release\ExamSignSystemEntity.pdb

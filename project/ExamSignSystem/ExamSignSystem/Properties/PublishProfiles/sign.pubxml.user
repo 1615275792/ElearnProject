@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>E:\project</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="3rdLibs/AspNetPager/AspNetPager.dll">
+      <publishTime>12/05/2016 14:39:08</publishTime>
+    </File>
+    <File Include="3rdLibs/Kindeditor/Asp.net/bin/LitJSON.dll">
+      <publishTime>12/01/2016 16:05:16</publishTime>
+    </File>
+    <File Include="3rdLibs/Kindeditor/Asp.net/demo.aspx">
+      <publishTime>12/01/2016 16:05:16</publishTime>
+    </File>
+    <File Include="3rdLibs/Kindeditor/Asp.net/file_manager_json.ashx">
+      <publishTime>12/01/2016 16:05:16</publishTime>
+    </File>
+    <File Include="3rdLibs/Kindeditor/Asp.net/README.txt">
+      <publishTime>12/01/2016 16:05:16</publishTime>
+    </File>
+    <File Include="3rdLibs/Kindeditor/Asp.net/upload_json.ashx">
+      <publishTime>12/01/2016 16:05:16</publishTime>
+    </File>
+    <File Include="3rdLibs/Kindeditor/Js/kindeditor-all-min.js">
+      <publishTime>12/01/2016 16:06:56</publishTime>
+    </File>
+    <File Include="3rdLibs/Kindeditor/Js/kindeditor-all.js">
+      <publishTime>12/01/2016 16:06:56</publishTime>
+    </File>
+    <File Include="3rdLibs/Kindeditor/Themes/common/anchor.gif">
+      <publishTime>12/01/2016 16:03:54</publishTime>
+    </File>
+    <File Include="3rdLibs/Kindeditor/Themes/common/blank.gif">
+      <publishTime>12/01/2016 16:03:54</publishTime>
+    </File>
+    <File Include="3rdLibs/Kindeditor/Themes/common/flash.gif">
+      <publishTime>12/01/2016 16:03:54</publishTime>
+    </File>
+    <File Include="3rdLibs/Kindeditor/Themes/common/loading.gif">
+      <publishTime>12/01/2016 16:03:54</publishTime>
+    </File>
+    <File Include="3rdLibs/Kindeditor/Themes/common/media.gif">
+      <publishTime>12/01/2016 16:03:54</publishTime>
+    </File>
+    <File Include="3rdLibs/Kindeditor/Themes/common/rm.gif">
+      <publishTime>12/01/2016 16:03:54</publishTime>
+    </File>
+    <File Include="3rdLibs/Kindeditor/Themes/default/background.png">
+      <publishTime>12/01/2016 16:03:54</publishTime>
+    </File>
+    <File Include="3rdLibs/Kindeditor/Themes/default/default.css">
+      <publishTime>12/01/2016 16:03:54</publishTime>
+    </File>
+    <File Include="3rdLibs/Kindeditor/Themes/default/default.png">
+      <publishTime>12/01/2016 16:03:54</publishTime>
+    </File>
+    <File Include="3rdLibs/Kindeditor/Themes/qq/editor.gif">
+      <publishTime>12/01/2016 16:03:54</publishTime>
+    </File>
+    <File Include="3rdLibs/Kindeditor/Themes/qq/qq.css">
+      <publishTime>12/01/2016 16:03:54</publishTime>
+    </File>
+    <File Include="3rdLibs/Kindeditor/Themes/simple/simple.css">
+      <publishTime>12/01/2016 16:03:54</publishTime>
+    </File>
+    <File Include="3rdLibs/Layer/layer.js">
+      <publishTime>12/01/2016 16:03:05</publishTime>
+    </File>
+    <File Include="3rdLibs/Layer/skin/default/icon-ext.png">
+      <publishTime>12/01/2016 16:03:05</publishTime>
+    </File>
+    <File Include="3rdLibs/Layer/skin/default/icon.png">
+      <publishTime>12/01/2016 16:03:05</publishTime>
+    </File>
+    <File Include="3rdLibs/Layer/skin/default/loading-0.gif">
+      <publishTime>12/01/2016 16:03:05</publishTime>
+    </File>
+    <File Include="3rdLibs/Layer/skin/default/loading-1.gif">
+      <publishTime>12/01/2016 16:03:05</publishTime>
+    </File>
+    <File Include="3rdLibs/Layer/skin/default/loading-2.gif">
+      <publishTime>12/01/2016 16:03:05</publishTime>
+    </File>
+    <File Include="3rdLibs/Layer/skin/layer.css">
+      <publishTime>12/01/2016 16:03:05</publishTime>
+    </File>
+    <File Include="3rdLibs/Time/Css/lhgcalendar.css">
+      <publishTime>12/02/2016 14:36:36</publishTime>
+    </File>
+    <File Include="3rdLibs/Time/Images/date.gif">
+      <publishTime>12/01/2016 16:08:43</publishTime>
+    </File>
+    <File Include="3rdLibs/Time/Images/d_a_bg.gif">
+      <publishTime>12/01/2016 16:08:43</publishTime>
+    </File>
+    <File Include="3rdLibs/Time/Images/d_h_bg.gif">
+      <publishTime>12/01/2016 16:08:43</publishTime>
+    </File>
+    <File Include="3rdLibs/Time/Images/d_t_bg.gif">
+      <publishTime>12/01/2016 16:08:43</publishTime>
+    </File>
+    <File Include="3rdLibs/Time/Images/Thumbs.db">
+      <publishTime>12/01/2016 16:08:43</publishTime>
+    </File>
+    <File Include="3rdLibs/Time/Js/lhgcalendar.js">
+      <publishTime>12/02/2016 14:34:58</publishTime>
+    </File>
+    <File Include="3rdLibs/Time/Js/lhgcore.js">
+      <publishTime>12/01/2016 16:12:17</publishTime>
+    </File>
+    <File Include="3rdLibs/Xlsio/Syncfusion.Compression.Base.dll">
+      <publishTime>12/01/2016 16:26:53</publishTime>
+    </File>
+    <File Include="3rdLibs/Xlsio/syncfusion.xlsio.base.dll">
+      <publishTime>12/01/2016 16:26:53</publishTime>
+    </File>
+    <File Include="3rdLibs/Xlsio/syncfusion.xlsio.Web.dll">
+      <publishTime>12/01/2016 16:26:53</publishTime>
+    </File>
+    <File Include="Admin/AdminCSS/AdminCommom.css">
+      <publishTime>12/02/2016 11:17:35</publishTime>
+    </File>
+    <File Include="Admin/AdminCSS/AdminFindPwd.css">
+      <publishTime>12/13/2016 16:35:18</publishTime>
+    </File>
+    <File Include="Admin/AdminCSS/AdminLogin.css">
+      <publishTime>12/13/2016 16:50:18</publishTime>
+    </File>
+    <File Include="Admin/AdminCSS/prettify.css">
+      <publishTime>12/02/2016 13:42:31</publishTime>
+    </File>
+    <File Include="Admin/AdminLogin/Login.aspx">
+      <publishTime>12/15/2016 15:29:59</publishTime>
+    </File>
+    <File Include="Admin/Main/ExamManage/AddSubject.aspx">
+      <publishTime>12/23/2016 15:55:55</publishTime>
+    </File>
+    <File Include="Admin/Main/ExamManage/ExportSignTable.aspx">
+      <publishTime>12/14/2016 13:42:06</publishTime>
+    </File>
+    <File Include="Admin/Main/ExamManage/LeadGradeTable.aspx">
+      <publishTime>12/14/2016 10:12:49</publishTime>
+    </File>
+    <File Include="Admin/Main/ExamManage/ModifySubject.aspx">
+      <publishTime>12/14/2016 16:01:40</publishTime>
+    </File>
+    <File Include="Admin/Main/ExamManage/SubjectManage.aspx">
+      <publishTime>12/22/2016 17:14:06</publishTime>
+    </File>
+    <File Include="Admin/Main/MessageManage/AddMessage.aspx">
+      <publishTime>12/15/2016 14:09:36</publishTime>
+    </File>
+    <File Include="Admin/Main/MessageManage/LookMessage.aspx">
+      <publishTime>12/15/2016 15:03:08</publishTime>
+    </File>
+    <File Include="Admin/Main/Operate.aspx">
+      <publishTime>12/22/2016 16:12:51</publishTime>
+    </File>
+    <File Include="Admin/Main/PersonManage/FillEmail.aspx">
+      <publishTime>12/15/2016 15:55:02</publishTime>
+    </File>
+    <File Include="Admin/Main/PersonManage/ModifyAdminPwd.aspx">
+      <publishTime>12/15/2016 10:37:25</publishTime>
+    </File>
+    <File Include="bin/AspNetPager.dll">
+      <publishTime>12/05/2016 14:39:08</publishTime>
+    </File>
+    <File Include="bin/ExamSignSystem.dll">
+      <publishTime>12/26/2016 10:33:36</publishTime>
+    </File>
+    <File Include="bin/ExamSignSystemBLL.dll">
+      <publishTime>12/26/2016 10:33:35</publishTime>
+    </File>
+    <File Include="bin/ExamSignSystemDAL.dll">
+      <publishTime>12/26/2016 10:33:35</publishTime>
+    </File>
+    <File Include="bin/ExamSignSystemEntity.dll">
+      <publishTime>12/26/2016 10:33:34</publishTime>
+    </File>
+    <File Include="bin/Syncfusion.Compression.Base.dll">
+      <publishTime>12/01/2016 16:26:53</publishTime>
+    </File>
+    <File Include="bin/syncfusion.xlsio.base.dll">
+      <publishTime>12/01/2016 16:26:53</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>12/01/2016 15:52:33</publishTime>
+    </File>
+    <File Include="Imgs/admin.gif">
+      <publishTime>12/01/2016 16:01:22</publishTime>
+    </File>
+    <File Include="Imgs/bk.png">
+      <publishTime>12/01/2016 16:01:22</publishTime>
+    </File>
+    <File Include="Imgs/chaxun.png">
+      <publishTime>12/01/2016 16:01:22</publishTime>
+    </File>
+    <File Include="Imgs/exam.png">
+      <publishTime>12/01/2016 16:01:22</publishTime>
+    </File>
+    <File Include="Imgs/home.png">
+      <publishTime>12/01/2016 16:01:22</publishTime>
+    </File>
+    <File Include="Imgs/icon_correct.png">
+      <publishTime>12/01/2016 16:01:22</publishTime>
+    </File>
+    <File Include="Imgs/info.gif">
+      <publishTime>12/01/2016 16:01:22</publishTime>
+    </File>
+    <File Include="Imgs/login.gif">
+      <publishTime>12/01/2016 16:01:22</publishTime>
+    </File>
+    <File Include="Imgs/smallHome.png">
+      <publishTime>12/01/2016 16:01:22</publishTime>
+    </File>
+    <File Include="Imgs/smallHomebule.png">
+      <publishTime>12/01/2016 16:01:22</publishTime>
+    </File>
+    <File Include="Imgs/timg.png">
+      <publishTime>12/01/2016 16:01:22</publishTime>
+    </File>
+    <File Include="Imgs/title.png">
+      <publishTime>12/01/2016 16:01:22</publishTime>
+    </File>
+    <File Include="Jquery/jquery-1.10.2.min.js">
+      <publishTime>12/01/2016 16:13:49</publishTime>
+    </File>
+    <File Include="PublicPage/CheckCode.aspx">
+      <publishTime>12/05/2016 13:52:01</publishTime>
+    </File>
+    <File Include="Student/Main/Operate.aspx">
+      <publishTime>12/20/2016 11:07:38</publishTime>
+    </File>
+    <File Include="Student/Main/PersonManage/CompleteInfo.aspx">
+      <publishTime>12/15/2016 15:54:09</publishTime>
+    </File>
+    <File Include="Student/Main/PersonManage/LookInfo.aspx">
+      <publishTime>12/12/2016 16:29:19</publishTime>
+    </File>
+    <File Include="Student/Main/PersonManage/ModifyInfo.aspx">
+      <publishTime>12/12/2016 16:49:08</publishTime>
+    </File>
+    <File Include="Student/Main/PersonManage/ModifyPwd.aspx">
+      <publishTime>12/13/2016 11:26:40</publishTime>
+    </File>
+    <File Include="Student/Main/Query/QueryOperate.aspx">
+      <publishTime>12/22/2016 15:03:55</publishTime>
+    </File>
+    <File Include="Student/Main/SignManage/ExamSign.aspx">
+      <publishTime>12/23/2016 16:08:38</publishTime>
+    </File>
+    <File Include="Student/Main/SignManage/LookSignInfo.aspx">
+      <publishTime>12/20/2016 16:28:04</publishTime>
+    </File>
+    <File Include="Student/Main/SignManage/ModifySignInfo.aspx">
+      <publishTime>12/22/2016 15:45:32</publishTime>
+    </File>
+    <File Include="Student/StuCss/Commom.css">
+      <publishTime>12/02/2016 10:09:17</publishTime>
+    </File>
+    <File Include="Student/StuCss/Inquiry.css">
+      <publishTime>12/02/2016 09:53:21</publishTime>
+    </File>
+    <File Include="Student/StuCss/StuFindPwd.css">
+      <publishTime>12/02/2016 09:43:27</publishTime>
+    </File>
+    <File Include="Student/StuCss/StuLogin.css">
+      <publishTime>12/14/2016 15:13:40</publishTime>
+    </File>
+    <File Include="Student/StuJS/StuFindPwd.js">
+      <publishTime>12/02/2016 09:21:56</publishTime>
+    </File>
+    <File Include="Student/StuJS/StuLogin.js">
+      <publishTime>12/07/2016 10:05:49</publishTime>
+    </File>
+    <File Include="Student/StuLogin/ShowAnnunciate.aspx">
+      <publishTime>12/05/2016 13:43:54</publishTime>
+    </File>
+    <File Include="Student/StuLogin/StudentLogin.aspx">
+      <publishTime>12/22/2016 13:40:00</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/26/2016 10:33:36</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

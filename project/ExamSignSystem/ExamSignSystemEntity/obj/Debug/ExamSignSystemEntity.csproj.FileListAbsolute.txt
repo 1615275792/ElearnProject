@@ -1,0 +1,10 @@
+E:\毕设项目\ExamSignSystem\ExamSignSystemEntity\bin\Debug\ExamSignSystemEntity.dll
+E:\毕设项目\ExamSignSystem\ExamSignSystemEntity\bin\Debug\ExamSignSystemEntity.pdb
+E:\毕设项目\ExamSignSystem\ExamSignSystemEntity\obj\Debug\ExamSignSystemEntity.dll
+E:\毕设项目\ExamSignSystem\ExamSignSystemEntity\obj\Debug\ExamSignSystemEntity.pdb
+E:\毕设项目\ExamSignSystem\ExamSignSystemEntity\obj\Debug\ExamSignSystemEntity.csprojResolveAssemblyReference.cache
+E:\毕业设计\ExamSignSystem\ExamSignSystemEntity\bin\Debug\ExamSignSystemEntity.dll
+E:\毕业设计\ExamSignSystem\ExamSignSystemEntity\bin\Debug\ExamSignSystemEntity.pdb
+E:\毕业设计\ExamSignSystem\ExamSignSystemEntity\obj\Debug\ExamSignSystemEntity.dll
+E:\毕业设计\ExamSignSystem\ExamSignSystemEntity\obj\Debug\ExamSignSystemEntity.pdb
+E:\毕业设计\ExamSignSystem\ExamSignSystemEntity\obj\Debug\ExamSignSystemEntity.csprojResolveAssemblyReference.cache

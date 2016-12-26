@@ -1,0 +1,184 @@
+﻿body {
+}
+           *{
+                margin: 0px;
+                padding: 0px;
+            }
+            .formbackground img{
+                 width:100%; 
+                 height:100%;
+            }
+            .top{
+                position: absolute;
+                left:540px; 
+                top:220px; 
+                width:600px;
+                height:300px;
+            }
+             .center_right_top{
+                margin:30px 80px 0px 80px;
+                width: 320px;
+                height:50px;
+                border-radius: 6px;
+                border:2px solid #ccc;
+                background-color:white;
+            }
+           .labelAccount{
+                position: absolute;
+                left: 80px;
+                top:34px;
+                padding: 10px;
+                z-index: 999;
+                color: #333333;
+                font:22px "黑体",Verdana;
+                line-height: 24px;
+                float: left;
+            }
+            .Account{
+                width: 300px;
+                height:47px;
+                float: left;
+                position: absolute;
+                left:70px;
+                font-size:18px;
+                border-radius: 6px;
+                border-left:0px;
+                border-top:0px;
+                outline: none;
+            }
+             .txtAccount{
+                width: 260px;
+                height:49px;
+                float: left;
+                position: absolute;
+                left:70px;
+                font-size:18px;
+                border-radius: 6px;
+                border-left:0px;
+                border-top:0px;
+            }
+            .center_right_center{
+                margin:0px 0px 0px 80px;
+                width: 320px;
+                height:50px;
+                border-radius: 6px;
+                border:2px solid #ccc;
+                background-color:white;
+            }
+           .labelPwd{
+                position: absolute;
+                left: 80px;
+                top:88px;
+                padding: 10px;
+                z-index: 999;
+                color: #333333;
+                font:22px "黑体",Verdana;
+                line-height: 24px;
+                float: left;
+            }
+            
+           .Pwd{
+                width:300px;
+                height:47px;
+                float: left;
+                position: absolute;
+                left:70px;
+                font-size:18px;
+                border-radius: 6px;
+                border-left:0px;
+                border-top:0px;
+            }
+              .txtPwd{
+                width: 260px;
+                height:49px;
+                float: left;
+                position: absolute;
+                left:70px;
+                font-size:18px;
+                border-radius: 6px;
+                border-left:0px;
+                border-top:0px;
+            }
+           .center_right_end{
+                margin:10px 80px 0px 80px;
+                width: 320px;
+                height:50px;
+                border-radius: 6px;
+                border:2px solid #ccc;
+                background-color:white;
+            }
+           .labelYanZheng{
+                position: absolute;
+                left: 80px;
+                top:152px;
+                padding: 10px;
+                z-index: 999;
+                color: #333333;
+                font:22px "黑体",Verdana;
+                line-height: 24px;
+                float: left;
+            }
+            
+           .YanZheng{
+                width: 200px;
+                height:47px;
+                float: left;
+                position: absolute;
+                left:70px;
+                font-size:18px;
+                border-radius: 6px;
+                border-left:0px;
+                border-top:0px;
+            }
+            .txtYanZheng{
+                width: 140px;
+                height:49px;
+                float: left;
+                position: absolute;
+                left:70px;
+                font-size:18px;
+                border-radius: 6px;
+                border-left:0px;
+                border-top:0px;
+            }
+            .YanZhengMa{
+               float:left;
+               position:relative;
+               left:230px;
+               top:10px;
+            }
+             .subLogin{
+                width: 320px;
+                height:50px;
+                margin-top:20px;
+                margin-left:80px;
+                border-radius: 6px;
+                background-color:#428BCA;
+                font-family: '黑体';
+                font-size:22px;
+                color: white;
+                border:2px solid #428BCA;
+                cursor:pointer;
+            }
+            #keyImg{
+                width:80px;
+                height:30px;
+                margin-top: -5px;
+                margin-left:-35px;
+                border-radius: 6px;
+            }
+            .center_bottom{
+                 position: relative;
+                 top:16px;
+                 left:330px;
+                 width: 140px;
+            }
+            .center_bottom a{
+                color:#333333;
+                font:20px;
+                font-family: '黑体';
+                text-decoration: none;
+            }
+           .center_bottom a:hover{
+                color:red;
+            }

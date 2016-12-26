@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6560AD9A-84AD-4BE9-B6AD-16BD4C46DEEC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ExamSignSystem</RootNamespace>
+    <AssemblyName>ExamSignSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNetPager, Version=7.2.0.0, Culture=neutral, PublicKeyToken=fb0a0fe055d40fd4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>3rdLibs\AspNetPager\AspNetPager.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="syncfusion.xlsio.base, Version=4.202.0.37, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>3rdLibs\Xlsio\syncfusion.xlsio.base.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="3rdLibs\AspNetPager\AspNetPager.dll" />
+    <Content Include="3rdLibs\Kindeditor\Asp.net\file_manager_json.ashx" />
+    <Content Include="3rdLibs\Kindeditor\Asp.net\upload_json.ashx" />
+    <Content Include="3rdLibs\Time\Images\Thumbs.db" />
+    <None Include="Properties\PublishProfiles\sign.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="3rdLibs\Kindeditor\Asp.net\bin\LitJSON.dll" />
+    <Content Include="3rdLibs\Kindeditor\Asp.net\demo.aspx" />
+    <Content Include="3rdLibs\Kindeditor\Asp.net\README.txt" />
+    <Content Include="3rdLibs\Kindeditor\Js\kindeditor-all-min.js" />
+    <Content Include="3rdLibs\Kindeditor\Js\kindeditor-all.js" />
+    <Content Include="3rdLibs\Kindeditor\Themes\common\anchor.gif" />
+    <Content Include="3rdLibs\Kindeditor\Themes\common\blank.gif" />
+    <Content Include="3rdLibs\Kindeditor\Themes\common\flash.gif" />
+    <Content Include="3rdLibs\Kindeditor\Themes\common\loading.gif" />
+    <Content Include="3rdLibs\Kindeditor\Themes\common\media.gif" />
+    <Content Include="3rdLibs\Kindeditor\Themes\common\rm.gif" />
+    <Content Include="3rdLibs\Kindeditor\Themes\default\background.png" />
+    <Content Include="3rdLibs\Kindeditor\Themes\default\default.css" />
+    <Content Include="3rdLibs\Kindeditor\Themes\default\default.png" />
+    <Content Include="3rdLibs\Kindeditor\Themes\qq\editor.gif" />
+    <Content Include="3rdLibs\Kindeditor\Themes\qq\qq.css" />
+    <Content Include="3rdLibs\Kindeditor\Themes\simple\simple.css" />
+    <Content Include="3rdLibs\Layer\layer.js" />
+    <Content Include="3rdLibs\Layer\skin\default\icon-ext.png" />
+    <Content Include="3rdLibs\Layer\skin\default\icon.png" />
+    <Content Include="3rdLibs\Layer\skin\default\loading-0.gif" />
+    <Content Include="3rdLibs\Layer\skin\default\loading-1.gif" />
+    <Content Include="3rdLibs\Layer\skin\default\loading-2.gif" />
+    <Content Include="3rdLibs\Layer\skin\layer.css" />
+    <Content Include="3rdLibs\Time\Css\lhgcalendar.css" />
+    <Content Include="3rdLibs\Time\Images\date.gif" />
+    <Content Include="3rdLibs\Time\Images\d_a_bg.gif" />
+    <Content Include="3rdLibs\Time\Images\d_h_bg.gif" />
+    <Content Include="3rdLibs\Time\Images\d_t_bg.gif" />
+    <Content Include="3rdLibs\Time\Js\lhgcalendar.js" />
+    <Content Include="3rdLibs\Time\Js\lhgcore.js" />
+    <Content Include="3rdLibs\Xlsio\Syncfusion.Compression.Base.dll" />
+    <Content Include="3rdLibs\Xlsio\syncfusion.xlsio.base.dll" />
+    <Content Include="3rdLibs\Xlsio\syncfusion.xlsio.Web.dll" />
+    <Content Include="Admin\AdminCSS\AdminCommom.css" />
+    <Content Include="Admin\AdminCSS\AdminFindPwd.css" />
+    <Content Include="Admin\AdminCSS\AdminLogin.css" />
+    <Content Include="Admin\AdminCSS\prettify.css" />
+    <Content Include="Admin\AdminLogin\Login.aspx" />
+    <Content Include="Admin\Main\MessageManage\AddMessage.aspx" />
+    <Content Include="Admin\Main\MessageManage\LookMessage.aspx" />
+    <Content Include="Admin\Main\ExamManage\AddSubject.aspx" />
+    <Content Include="Admin\Main\ExamManage\ExportSignTable.aspx" />
+    <Content Include="Admin\Main\ExamManage\LeadGradeTable.aspx" />
+    <Content Include="Admin\Main\ExamManage\ModifySubject.aspx" />
+    <Content Include="Admin\Main\ExamManage\SubjectManage.aspx" />
+    <Content Include="Admin\Main\Operate.aspx" />
+    <Content Include="Admin\Main\PersonManage\FillEmail.aspx" />
+    <Content Include="Admin\Main\PersonManage\ModifyAdminPwd.aspx" />
+    <Content Include="PublicPage\CheckCode.aspx" />
+    <Content Include="Student\StuCss\Commom.css" />
+    <Content Include="Student\StuCss\Inquiry.css" />
+    <Content Include="Student\StuCss\StuFindPwd.css" />
+    <Content Include="Student\StuCss\StuLogin.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Imgs\admin.gif" />
+    <Content Include="Imgs\bk.png" />
+    <Content Include="Imgs\chaxun.png" />
+    <Content Include="Imgs\exam.png" />
+    <Content Include="Imgs\home.png" />
+    <Content Include="Imgs\icon_correct.png" />
+    <Content Include="Imgs\info.gif" />
+    <Content Include="Imgs\login.gif" />
+    <Content Include="Imgs\smallHome.png" />
+    <Content Include="Imgs\smallHomebule.png" />
+    <Content Include="Imgs\timg.png" />
+    <Content Include="Imgs\title.png" />
+    <Content Include="Jquery\jquery-1.10.2.min.js" />
+    <Content Include="Student\StuJS\StuFindPwd.js" />
+    <Content Include="Student\StuJS\StuLogin.js" />
+    <Content Include="Student\Main\Operate.aspx" />
+    <Content Include="Student\Main\PersonManage\CompleteInfo.aspx" />
+    <Content Include="Student\Main\PersonManage\LookInfo.aspx" />
+    <Content Include="Student\Main\PersonManage\ModifyInfo.aspx" />
+    <Content Include="Student\Main\PersonManage\ModifyPwd.aspx" />
+    <Content Include="Student\Main\Query\QueryOperate.aspx" />
+    <Content Include="Student\Main\SignManage\ExamSign.aspx" />
+    <Content Include="Student\Main\SignManage\LookSignInfo.aspx" />
+    <Content Include="Student\Main\SignManage\ModifySignInfo.aspx" />
+    <Content Include="Student\StuLogin\StudentLogin.aspx" />
+    <Content Include="Student\StuLogin\ShowAnnunciate.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AdminLogin\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminLogin\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Main\MessageManage\AddMessage.aspx.cs">
+      <DependentUpon>AddMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Main\MessageManage\AddMessage.aspx.designer.cs">
+      <DependentUpon>AddMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Main\MessageManage\LookMessage.aspx.cs">
+      <DependentUpon>LookMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Main\MessageManage\LookMessage.aspx.designer.cs">
+      <DependentUpon>LookMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Main\ExamManage\AddSubject.aspx.cs">
+      <DependentUpon>AddSubject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Main\ExamManage\AddSubject.aspx.designer.cs">
+      <DependentUpon>AddSubject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Main\ExamManage\ExportSignTable.aspx.cs">
+      <DependentUpon>ExportSignTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Main\ExamManage\ExportSignTable.aspx.designer.cs">
+      <DependentUpon>ExportSignTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Main\ExamManage\LeadGradeTable.aspx.cs">
+      <DependentUpon>LeadGradeTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Main\ExamManage\LeadGradeTable.aspx.designer.cs">
+      <DependentUpon>LeadGradeTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Main\ExamManage\ModifySubject.aspx.cs">
+      <DependentUpon>ModifySubject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Main\ExamManage\ModifySubject.aspx.designer.cs">
+      <DependentUpon>ModifySubject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Main\ExamManage\SubjectManage.aspx.cs">
+      <DependentUpon>SubjectManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Main\ExamManage\SubjectManage.aspx.designer.cs">
+      <DependentUpon>SubjectManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Main\Operate.aspx.cs">
+      <DependentUpon>Operate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Main\Operate.aspx.designer.cs">
+      <DependentUpon>Operate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Main\PersonManage\FillEmail.aspx.cs">
+      <DependentUpon>FillEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Main\PersonManage\FillEmail.aspx.designer.cs">
+      <DependentUpon>FillEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Main\PersonManage\ModifyAdminPwd.aspx.cs">
+      <DependentUpon>ModifyAdminPwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Main\PersonManage\ModifyAdminPwd.aspx.designer.cs">
+      <DependentUpon>ModifyAdminPwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\ContextObjects.cs" />
+    <Compile Include="Core\LeadGrade.cs" />
+    <Compile Include="Core\MailFindPwd.cs" />
+    <Compile Include="Core\MD5Encrypt.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublicPage\CheckCode.aspx.cs">
+      <DependentUpon>CheckCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PublicPage\CheckCode.aspx.designer.cs">
+      <DependentUpon>CheckCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\Main\Operate.aspx.cs">
+      <DependentUpon>Operate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\Main\Operate.aspx.designer.cs">
+      <DependentUpon>Operate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\Main\PersonManage\CompleteInfo.aspx.cs">
+      <DependentUpon>CompleteInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\Main\PersonManage\CompleteInfo.aspx.designer.cs">
+      <DependentUpon>CompleteInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\Main\PersonManage\LookInfo.aspx.cs">
+      <DependentUpon>LookInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\Main\PersonManage\LookInfo.aspx.designer.cs">
+      <DependentUpon>LookInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\Main\PersonManage\ModifyInfo.aspx.cs">
+      <DependentUpon>ModifyInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\Main\PersonManage\ModifyInfo.aspx.designer.cs">
+      <DependentUpon>ModifyInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\Main\PersonManage\ModifyPwd.aspx.cs">
+      <DependentUpon>ModifyPwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\Main\PersonManage\ModifyPwd.aspx.designer.cs">
+      <DependentUpon>ModifyPwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\Main\Query\QueryOperate.aspx.cs">
+      <DependentUpon>QueryOperate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\Main\Query\QueryOperate.aspx.designer.cs">
+      <DependentUpon>QueryOperate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\Main\SignManage\ExamSign.aspx.cs">
+      <DependentUpon>ExamSign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\Main\SignManage\ExamSign.aspx.designer.cs">
+      <DependentUpon>ExamSign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\Main\SignManage\LookSignInfo.aspx.cs">
+      <DependentUpon>LookSignInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\Main\SignManage\LookSignInfo.aspx.designer.cs">
+      <DependentUpon>LookSignInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\Main\SignManage\ModifySignInfo.aspx.cs">
+      <DependentUpon>ModifySignInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\Main\SignManage\ModifySignInfo.aspx.designer.cs">
+      <DependentUpon>ModifySignInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\StuLogin\StudentLogin.aspx.cs">
+      <DependentUpon>StudentLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\StuLogin\StudentLogin.aspx.designer.cs">
+      <DependentUpon>StudentLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\StuLogin\ShowAnnunciate.aspx.cs">
+      <DependentUpon>ShowAnnunciate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\StuLogin\ShowAnnunciate.aspx.designer.cs">
+      <DependentUpon>ShowAnnunciate.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ExamSignSystemBLL\ExamSignSystemBLL.csproj">
+      <Project>{134d06e2-8415-4f65-978c-91617090a331}</Project>
+      <Name>ExamSignSystemBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExamSignSystemDAL\ExamSignSystemDAL.csproj">
+      <Project>{8677993e-63fd-4e51-b698-ad7bd84ebfcf}</Project>
+      <Name>ExamSignSystemDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExamSignSystemEntity\ExamSignSystemEntity.csproj">
+      <Project>{1fd45c91-caed-41f1-8697-9fe417d6c10d}</Project>
+      <Name>ExamSignSystemEntity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Admin\Upfile\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>42696</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:42696/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
