@@ -130,6 +130,17 @@ namespace ExamSignSystemDAL
             return result;
         }
         /// <summary>
+        /// 查询获取特定科目下的报名结束时间
+        /// </summary>
+        /// <param name="sqlWhere">SQL语句的where子句</param>
+        /// <returns></returns>
+        public static string SelectSignEndTime(string sqlWhere)
+        {
+            string sql = "select subjectSignEndTime from [tb_Subject] where 1=1 " + sqlWhere;
+            string result = SqlHelper.ExecuteScalar(System.Data.CommandType.Text, sql, null).ToString();
+            return result;
+        }
+        /// <summary>
         /// 分页查询(管理员)
         /// </summary>
         /// <param name="tableName">表名</param>

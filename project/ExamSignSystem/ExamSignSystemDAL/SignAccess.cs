@@ -18,10 +18,11 @@ namespace ExamSignSystemDAL
         /// <returns></returns>
         public static bool InsertSign(Sign sign)
         {
-            string sql = "insert into [tb_Sign] (stuNo,subjectID) values (@stuNo,@subjectID)";
+            string sql = "insert into [tb_Sign] (stuNo,subjectID,signEndTime) values (@stuNo,@subjectID,@signEndTime)";
             SqlParameter[] prams =  { 
                 new SqlParameter("@stuNo",sign.stuNo),
-                new SqlParameter("@subjectID",sign.subjectID)
+                new SqlParameter("@subjectID",sign.subjectID),
+                new SqlParameter("@signEndTime",sign.signEndTime)
             };
             return SqlHelper.ExecuteNonQuery(System.Data.CommandType.Text, sql, prams);
         }
@@ -30,13 +31,35 @@ namespace ExamSignSystemDAL
         /// </summary>
         /// <param name="entityID">待删除实体对象的标识号</param>
         /// <returns></returns>
-        public static bool DeleteSign(int subjectID)
+        public static bool DeleteSign(int subjectID,string stuNo)
         {
-            string sql = "delete from [tb_Sign] where subjectID = @ID";
+            string sql = "delete from [tb_Sign] where subjectID = @ID and stuNo=@stuNo";
             SqlParameter[] prams =  { 
-                new SqlParameter("@ID",subjectID)
+                new SqlParameter("@ID",subjectID),
+                new SqlParameter("@stuNo",stuNo)
             };
             return SqlHelper.ExecuteNonQuery(System.Data.CommandType.Text, sql, prams);
+        }
+        /// <summary>
+        ///删除过期的科目
+        /// </summary>
+        /// <param name="entityID">待删除实体对象的标识号</param>
+        /// <returns></returns>
+        public static bool DeleteSignSubject()
+        {
+            string sql = "delete from [tb_Sign] where signEndTime < GETDATE()";
+            return SqlHelper.ExecuteNonQuery(System.Data.CommandType.Text, sql,null);
+        }
+        /// <summary>
+        ///查找过期的科目
+        /// </summary>
+        /// <param name="entityID">待删除实体对象的标识号</param>
+        /// <returns></returns>
+        public static List<Sign> SelectSignSubject()
+        {
+            string sql = "select * from [tb_Sign] where signEndTime < GETDATE()";
+            List<Sign> result = SqlHelper.ExecuteReader<Sign>(System.Data.CommandType.Text, sql, null);
+            return result;
         }
         /// <summary>
         /// 查询获取对象集合

@@ -11,5 +11,6 @@ namespace ExamSignSystemEntity
         public int signID { get; set; }
         public string stuNo { get; set; } 
         public int subjectID { get; set; }
+        public DateTime signEndTime { get; set; }
     }
 }

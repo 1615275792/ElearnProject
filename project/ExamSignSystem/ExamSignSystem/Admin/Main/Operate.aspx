@@ -289,6 +289,11 @@
                            提示:<span id="subName" runat="server"></span>、<span id="name" runat="server"></span>的考试报名已截止了,请及时清除！
                        </marquee>
                     </div>
+                     <div class="moveFont" id="adminShow" runat="server" style="display:none;">
+                       <marquee onmouseover=this.stop() onmouseout=this.start()>
+                           提示: 欢迎管理员回来"修理"科目
+                       </marquee>
+                    </div>
                 </div>
             </div>
             <div class="center">

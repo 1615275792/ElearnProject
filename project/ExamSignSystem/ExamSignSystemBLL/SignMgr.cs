@@ -28,17 +28,49 @@ namespace ExamSignSystemBLL
        /// </summary>
        /// <param name="diaryID"></param>
        /// <returns></returns>
-       public Boolean DeleteSign(int subjectID)
+       public Boolean DeleteSign(int subjectID,string stuNo)
        {
            try
            {
-               return SignAccess.DeleteSign(subjectID);
+               return SignAccess.DeleteSign(subjectID,stuNo);
            }
            catch (Exception ex)
            {
                return false;
            }
        }
+       /// <summary>
+       ///删除过期的科目
+       /// </summary>
+       /// <param name="diaryID"></param>
+       /// <returns></returns>
+       public Boolean DeleteSubject()
+       {
+           try
+           {
+               return SignAccess.DeleteSignSubject();
+           }
+           catch (Exception ex)
+           {
+               return false;
+           }
+       }
+       /// <summary>
+       /// 查看有没有过期的科目
+       /// </summary>
+       /// <returns></returns>
+       public List<Sign> ShowOldSign()
+       {
+           try
+           {
+               List<Sign> list = SignAccess.SelectSignSubject();
+               return list;
+           }
+           catch (Exception ex)
+           {
+               return null;
+           }
+       }  
        /// <summary>
        /// 查看列表
        /// </summary>

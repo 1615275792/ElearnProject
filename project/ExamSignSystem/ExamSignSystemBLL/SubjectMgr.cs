@@ -107,6 +107,23 @@ namespace ExamSignSystemBLL
             }
         }
         /// <summary>
+        /// 查看单个科目报名结束时间（根据ID）
+        /// </summary>
+        /// <returns></returns>
+        public string ShowSignEndTime(int subjectID)
+        {
+            try
+            {
+                string sqlWhere = string.Format(" and  subjectID= {0}", subjectID);
+                string time = SubjectAccess.SelectSignEndTime(sqlWhere);
+                return time;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+        /// <summary>
         /// 查看单个科目（根据ID）
         /// </summary>
         /// <returns></returns>

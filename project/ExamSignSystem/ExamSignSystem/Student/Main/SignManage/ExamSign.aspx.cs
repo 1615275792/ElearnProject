@@ -19,6 +19,11 @@ namespace ExamSignSystem.Student.Main.SignManage
             this.AllSubject.Visible = false;
             string stuSno = ContextObjects.CurrentStudent.stuNo;
             SignMgr signMgr = new SignMgr();
+            List<Sign> list = signMgr.ShowOldSign();
+            if(list.Count!=0)
+            {
+                signMgr.DeleteSubject();
+            }
             List<Sign> signList = signMgr.ShowSignList(stuSno);
             if (signList!=null)
             {
@@ -101,10 +106,12 @@ namespace ExamSignSystem.Student.Main.SignManage
         [System.Web.Services.WebMethod]
         public static int StartSign(int subjectID)
         {
+            SubjectMgr mgr=new SubjectMgr();
             SignMgr sm = new SignMgr();
             Sign sign = new Sign();
             sign.subjectID = subjectID;
             sign.stuNo = ContextObjects.CurrentStudent.stuNo;
+            sign.signEndTime = DateTime.Parse(mgr.ShowSignEndTime(subjectID));
             if (sm.AddSign(sign))
             {
                 return 1;
@@ -119,7 +126,8 @@ namespace ExamSignSystem.Student.Main.SignManage
         public static int CancelSign(int subjectID)
         {
             SignMgr sm = new SignMgr();
-            if (sm.DeleteSign(subjectID))
+            string stuNo = ContextObjects.CurrentStudent.stuNo;
+            if (sm.DeleteSign(subjectID,stuNo))
             {
                 return 1;
             }

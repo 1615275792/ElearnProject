@@ -19,6 +19,7 @@ namespace ExamSignSystem.Admin.Main
                 List<Subject> list = mgr.FindOldSubject();
                 if (list.Count==0)
                 {
+                    this.adminShow.Attributes.Add("style", "display:block");
                     this.move.Visible = false;
                 }
                 else if (list.Count == 1)

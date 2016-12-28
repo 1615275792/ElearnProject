@@ -322,9 +322,14 @@
                     </div>
                 </div>
                 <div style=" height:78px;">
-                    <div class="moveFont">
+                    <div class="moveFont" id="move" runat="server">
                        <marquee onmouseover=this.stop() onmouseout=this.start()>
                            提示:<span id="subName" runat="server"></span>的考试报名快要截止了,请同学们抓紧报名！
+                       </marquee>
+                    </div>
+                    <div class="moveFont" id="showSign" runat="server" style="display:none;">
+                       <marquee onmouseover=this.stop() onmouseout=this.start()>
+                           提示: 考试报名开始了,请同学们踊跃报名
                        </marquee>
                     </div>
                 </div>
